@@ -1,0 +1,31 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+
+  <!-- F1TENTH VESC -->
+  <arg name="racecar_version" default="racecar-v2" />
+  <arg name="run_camera" default="false"/>
+  <group ns="vesc">
+    <!-- Spawn MUXs -->
+    <include file="$(find racecar)/launch/mux.launch" />
+    <!-- VESC Driver -->
+    <include file="$(find racecar)/launch/includes/$(arg racecar_version)/vesc.launch.xml" >
+      <arg name="racecar_version" value="$(arg racecar_version)" />
+    </include>
+  </group>
+
+  <!-- Static Transforms -->
+  <include file="$(find racecar)/launch/includes/$(arg racecar_version)/static_transforms.launch.xml" />
+
+  <!-- AutoDRIVE-F1TENTH Keyboard Teleop Node -->
+  <arg name="lin_vel" default="0.0" />
+  <arg name="ang_vel" default="0.0" />
+  <arg name="lin_noise" default="0.0" />
+  <arg name="ang_noise" default="0.0" />
+  <node name="open_loop_ctrl" pkg="autodrive" type="ol_ctrl.py" output="screen" clear_params="true" >
+  <param name="lin_vel" value="$(arg lin_vel)" />
+  <param name="ang_vel" value="$(arg ang_vel)" />
+  <param name="lin_noise" value="$(arg lin_noise)" />
+  <param name="ang_noise" value="$(arg ang_noise)" />
+  </node>
+
+</launch>
