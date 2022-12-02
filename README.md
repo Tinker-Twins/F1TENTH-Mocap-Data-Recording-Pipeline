@@ -1,8 +1,8 @@
 # F1TENTH Mocap Data Recording Pipeline
 
-| <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Motion%20Capture%20Area.png" width="500"> | <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Vehicle%20with%20MoCap%20Markers.JPG" width="500"> |
+| <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Motion%20Capture%20Area.png" width="500"> | <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Vehicle%20with%20Mocap%20Markers.JPG" width="500"> |
 | :----------------------------------: | :----------------------------------------------------------------------------------: |
-| OptiTrack Motion Capture Area | F1TENTH Vehicle with MoCap Markers |
+| OptiTrack Motion Capture Area | F1TENTH Vehicle with Mocap Markers |
 
 ## SETUP (Vehicle On-Board Computer)
 
@@ -26,7 +26,7 @@
     $ source ~/.bashrc
     ```
 
-## SETUP (Remote PC Connected to OptiTrack MoCap System)
+## SETUP (Remote PC Connected to OptiTrack Mocap System)
 
 1. Install `mocap_optitrack` ROS package:
     ```bash
@@ -41,15 +41,15 @@
     $ source /opt/ros/<distro>/setup.bash
     $ source ~/.bashrc
     ```
-    **Note:** There may be a need to clone and build vehicle packages on the remote PC connected to OptiTrack MoCap system as well, so that any custom message definitions are compiled and recorded to the bag file.
+    **Note:** There may be a need to clone and build vehicle packages on the remote PC connected to OptiTrack Mocap system as well, so that any custom message definitions are compiled and recorded to the bag file.
 
 ## USAGE
 
-- **[Terminal Window 1] MoCap Bringup:** Launch the `mocap.launch` file from `mocap_optitrack` package on remote PC.
+- **[Terminal Window 1] Mocap Bringup:** Launch the `mocap.launch` file from `mocap_optitrack` package on remote PC.
   ```bash
   $ roslaunch mocap_optitrack mocap.launch & rosrun rviz rviz
   ```
-  **Note:**  `F1TENTH_MoCap.rviz` configuration file could be used for convenient visualization of vehicle pose w.r.t. world frame.
+  **Note:**  `F1TENTH_Mocap.rviz` configuration file could be used for convenient visualization of vehicle pose w.r.t. world frame.
 
 - **[Terminal Window 2] Open-Loop Control:** Launch the `open_loop_ctrl_autodrive.launch` file from `racecar` package on vehicle computer (SSH into vehicle computer).
   ```bash
