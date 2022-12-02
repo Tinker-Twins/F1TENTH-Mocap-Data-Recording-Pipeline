@@ -41,6 +41,8 @@
     $ source /opt/ros/<distro>/setup.bash
     $ source ~/.bashrc
     ```
+    
+  **Note:** There may be a need to clone and build packages (as on the vehicle on-board computer) on the remote PC as well so that any custom message definitions are compiled.
 
 ## USAGE
 
