@@ -41,8 +41,7 @@
     $ source /opt/ros/<distro>/setup.bash
     $ source ~/.bashrc
     ```
-    
-  **Note:** There may be a need to clone and build packages (as on the vehicle on-board computer) on the remote PC as well so that any custom message definitions are compiled.
+    **Note:** There may be a need to clone and build vehicle packages on the remote PC connected to OptiTrack MoCap system as well, so that any custom message definitions are compiled and recorded to the bag file.
 
 ## USAGE
 
@@ -50,6 +49,7 @@
   ```bash
   $ roslaunch mocap_optitrack mocap.launch & rosrun rviz rviz
   ```
+  **Note:**  `F1TENTH_MoCap.rviz` configuration file could be used for convenient visualization of vehicle pose w.r.t. world frame.
 
 - **[Terminal Window 2] Open-Loop Control:** Launch the `open_loop_ctrl_autodrive.launch` file from `racecar` package on vehicle computer (SSH into vehicle computer).
   ```bash
