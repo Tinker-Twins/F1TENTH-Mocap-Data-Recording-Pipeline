@@ -51,10 +51,10 @@
   ```
   **Note:**  `F1TENTH_Mocap.rviz` configuration file could be used for convenient visualization of vehicle pose w.r.t. world frame.
 
-- **[Terminal Window 2] Open-Loop Control:** Launch the `open_loop_ctrl_autodrive.launch` file from `racecar` package on vehicle computer (SSH into vehicle computer).
+- **[Terminal Window 2] Open-Loop Control:** Launch the `open_loop_ctrl_autodrive.launch` file from `racecar` package on vehicle computer (SSH into vehicle computer). Pass commandline arguments as applicable to the open-loop control test/scheme.
   ```bash
   $ ssh ccri-car-1@192.168.2.103
-  $ roslaunch racecar open_loop_ctrl_autodrive.launch
+  $ roslaunch racecar open_loop_ctrl_autodrive.launch lin_vel:=<lin_vel> ang_vel:=<ang_vel> lin_noise:=<lin_noise> ang_noise:=<ang_noise>
   ```
 
 - **[Terminal Window 3] Data Recording:** Record contents of all topics to a bag file with a custom name.
