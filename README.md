@@ -58,7 +58,17 @@
   ```
 
 - **[Terminal Window 3] Data Recording:** Record contents of all topics to a bag file with a custom name.
+
+  - Command line option:
+  
   ```bash
   $ cd <path/to/directory/to/save/bag/file(s)>
   $ rosbag record -a -O <bag_file_name>.bag
+  ```
+
+
+  - Launch file option:
+  
+  ```bash
+  $ roslaunch racecar mocap_data_recording.launch rosbag_dir:=<path/to/directory/to/save/bag/file> rosbag_name:=<bag_file_name>.bag
   ```
