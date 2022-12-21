@@ -67,7 +67,7 @@
   ```
 
 
-  - Launch file option:
+  - Launch file option (supports topic throttling):
   
   ```bash
   $ roslaunch racecar mocap_data_recording.launch rosbag_dir:=<path/to/directory/to/save/bag/file> rosbag_name:=<bag_file_name>.bag
