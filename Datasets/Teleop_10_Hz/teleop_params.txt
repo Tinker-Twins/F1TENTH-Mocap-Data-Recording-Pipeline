@@ -1,4 +1,0 @@
-Drive Limit : 3.00
-Steer Limit : 0.52
-Drive Step  : 1.00
-Steer Step  : 0.10
