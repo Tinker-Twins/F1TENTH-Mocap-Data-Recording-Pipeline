@@ -1,0 +1,7 @@
+Fishhook Tolerance : 4e-5
+
+Skidpad Tolerance  : 5e-5
+
+Slalom Tolerance   : 1e-4
+
+Teleop Tolerance   : 9e-5  8e-4  8e-4  1e-4  4e-4  8e-4  9e-4  8e-4  4e-5  1e-5

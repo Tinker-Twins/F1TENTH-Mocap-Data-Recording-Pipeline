@@ -1,0 +1,4 @@
+Velocity Limit (m/s): 1.5
+Steering Limit (rad): 0.52
+Velocity Step (m/s) : 0.5
+Steering Step (rad) : 0.26

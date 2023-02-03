@@ -1,0 +1,8 @@
+Velocity Gradations (m/s):
+--------------------------
+All: 0.5 1.0 1.5 2.0 2.5
+
+Steering Gradations (rad):
+--------------------------
+Fishhook: 0.104 0.208 0.312 0.416 0.520 (automatic gradual variation)
+Others  : 0.312 0.416 0.520
