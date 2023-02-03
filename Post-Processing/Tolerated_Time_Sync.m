@@ -1,7 +1,7 @@
 %% Tolerated Time Synchronization of Data
 
-myDir = 'C:\Users\csamak\Downloads\'; % Directory from where to import non-synchronized data
-saveDir = 'C:\Users\csamak\Downloads\'; % Directory from where to export time-synchronized data
+myDir = 'C:\Users\csamak\Downloads\Data\Extracted MAT Files\fishhook_60_hz\'; % Directory from where to import non-synchronized data
+saveDir = 'C:\Users\csamak\Downloads\Data\Filtered MAT Files\fishhook_60_hz\'; % Directory from where to export time-synchronized data
 myFiles = dir(fullfile(myDir,'*.mat'));
 
 for k = 1:length(myFiles)
@@ -15,7 +15,7 @@ for k = 1:length(myFiles)
   [unique_elements_states,kept_ind_st,left_ind_st]=unique_element_finder(states_tsec);
 
    % Find common elements between control input arrays with cerain tolerance
-   common_ip_st = ismembertol(unique_elements_inputs,unique_elements_states,1e-4);
+   common_ip_st = ismembertol(unique_elements_inputs,unique_elements_states,4e-5);
    [ind_ip_st,val_ip_st] = find(common_ip_st>0);
    inputs_filtered = data.inputs(ind_ip_st,:);
    inputs_ts_filtered = unique_elements_inputs(ind_ip_st);
@@ -26,7 +26,7 @@ for k = 1:length(myFiles)
    end
 
    % Find common elements between system state arrays with cerain tolerance
-   common_st_ip = ismembertol(unique_elements_states,unique_elements_inputs,1e-4);
+   common_st_ip = ismembertol(unique_elements_states,unique_elements_inputs,4e-5);
    [ind_st_ip,val_st_ip] = find(common_st_ip>0);
    states_filtered = data.states(ind_st_ip,:);
    states_ts_filtered = unique_elements_states(ind_st_ip);
