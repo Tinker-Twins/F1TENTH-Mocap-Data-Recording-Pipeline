@@ -7,7 +7,7 @@ Datasets were collected by throttling the topics at 60 Hz (for open-loop control
 
 The datasets were collected in 2 batches:
 - **Clean:** Open loop control inputs applied to vehicle directly
-- **Noisy:** Open loop control inputs applied to vehicle with added Gaussian noise sampled at each time instant (µ = 0, σ<sub>v</sub> = 0.1, σ<sub>w</sub> = 0.1)
+- **Noisy:** Open loop control inputs applied to vehicle with added Gaussian noise sampled at each time instant (µ = 0, σ<sub>v</sub> = 0.1, σ<sub>δ</sub> = 0.1)
 
 File naming convention used is quite straightforward, but here are the details just-in-case:
 
