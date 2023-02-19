@@ -2,7 +2,7 @@ Fishhook CCW Tolerance : 4e-5
 
 Skidpad CCW Tolerance  : 5e-5
 
-Fishhook CW Tolerance : 
+Fishhook CW Tolerance : 1e-5
 
 Skidpad CW Tolerance  : 1e-5
 
