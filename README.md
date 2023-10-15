@@ -8,7 +8,10 @@
 
 ## SETUP (Vehicle On-Board Computer)
 
-[<img src="Media/OptiTrack%20Tutorial.png">](https://youtu.be/JvpxLf8VFvs)
+| [<img src="Media/OptiTrack%20Tutorial.png">](https://youtu.be/JvpxLf8VFvs) |
+|:------------------:|
+| [OptiTrack Mo-Cap System Setup, Calibration and ROS Integration Tutorial Video](https://youtu.be/JvpxLf8VFvs) |
+
 1. Clone this repository.
     ```bash
     $ git clone https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline.git
