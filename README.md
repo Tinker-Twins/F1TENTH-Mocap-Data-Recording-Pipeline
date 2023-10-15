@@ -3,6 +3,8 @@
 | <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Motion%20Capture%20Area.png" width="500"> | <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Vehicle%20with%20Mocap%20Markers.JPG" width="500"> |
 | :----------------------------------: | :----------------------------------------------------------------------------------: |
 | F1TENTH within OptiTrack Motion Capture Area | F1TENTH with 4 X-Base Passive Reflective Markers |
+| <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Ground%20Plane%20Setup.png" width="500"> | <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Asset%20Setup.JPG" width="500"> |
+| OptiTrack Mo-Cap Ground Plane Setup | OptiTrack Mo-Cap Asset (Vehicle) Setup |
 
 ## SETUP (Vehicle On-Board Computer)
 
