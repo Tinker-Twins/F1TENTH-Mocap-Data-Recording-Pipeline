@@ -6,11 +6,11 @@
 | <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Ground%20Plane%20Setup.JPG" width="500"> | <img src="https://github.com/Tinker-Twins/F1TENTH-Mocap-Data-Recording-Pipeline/blob/main/Media/Asset%20Setup.JPG" width="500"> |
 | OptiTrack Mo-Cap Ground Plane Setup | OptiTrack Mo-Cap Asset (Vehicle) Setup |
 
-## SETUP (Vehicle On-Board Computer)
-
 | [<img src="Media/OptiTrack%20Tutorial.png">](https://youtu.be/JvpxLf8VFvs) |
 |:------------------:|
 | [OptiTrack Mo-Cap System Setup, Calibration and ROS Integration Tutorial Video](https://youtu.be/JvpxLf8VFvs) |
+
+## SETUP (Vehicle On-Board Computer)
 
 1. Clone this repository.
     ```bash
